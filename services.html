@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width", initial-scale="1.0">
+        <title>Waling Library</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png" alt=""></a> 
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>  
+                        <li news and notices="active"><a href="services.html">NEWS AND NOTICES</a></li>
+                        <li><a href="about.html">ABOUT</a></li>                  
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1><p><font size=15 color="maroon">News and Views</font></p></h1>
+        </section>
+        <br>
+        <!----services we offer----------->
+         <div class="container-for-services">
+        <div class="services-we-offer">
+            <div class="different-news">
+              <button type="button" class="Local-news-button"><span class="change-newss-for-Local"></span></button>
+              <button type="button" class="International-news-button"><span class="change-newss-for-International"></span></button>
+            </div>
+          </div>
+          
+          <br>
+          <!-- news1local -->
+
+
+          <div class="all-the-services-of-Local">
+            <img src="images/bluelily.jpg" class="Local-services-toggle" style="float: left; width: 30%; margin-right: 20px; display: none;">
+            <h1 class="Local-services-toggle" style="color: blue; text-decoration: underline; display: none;">This is test waling  news1</h1>
+            <p class="Local-services-toggle" style="display: none;"> Write your local news1 here.</p>
+             </div><br> <br>
+
+             <!-- news1international  -->
+
+
+             <div class="all-the-services-of-International">
+                <img src="images/tiger.jpg" class="International-services-toggle" style="float: left; width: 30%; margin-right: 20px; display: none;">
+                <h1 class="International-services-toggle" style="color: blue; text-decoration: underline; display: none;">This is test international news1</h1>
+                <p class="International-services-toggle" style="display: none;"><p class="International-services-toggle" style="display: none;">Write your international news here.</p></p>
+                    </div>
+ 
+                    <br><br><br><br><br><br><br><br>
+					
+                <!-- news2local -->
+
+                <div class="all-the-services-of-Local">
+            <img src="images/iphone.jpg" class="Local-services-toggle" style="float: left; width: 30%; margin-right: 20px; display: none;">
+            <h1 class="Local-services-toggle" style="color: blue; text-decoration: underline; display: none;">This is test waling news 2</h1>
+            <p class="Local-services-toggle" style="display: none;"> Write your local news 2 here.</p>
+          </div>                        <br><br><br><br><br><br><br><br>
+
+
+                <!-- news2international -->
+
+
+                <div class="all-the-services-of-International">
+                    <img src="images/myflower.png" class="International-services-toggle" style="float: left; width: 30%; margin-right: 20px; display: none;">
+                    <h1 class="International-services-toggle" style="color: blue; text-decoration: underline; display: none;">This is test international news 2</h1>
+                    <p class="International-services-toggle" style="display: none;">Write your international bews 2 here</p></p>
+                        </div>
+
+                        <br><br><br><br><br><br><br><br>
+     
+                    </div> 
+
+        </div>
+          
+          
+          <script>
+            $(document).ready(function(){
+              $(".Local-news-button").click(function(){
+                $("div.all-the-services-of-Local .Local-services-toggle").slideToggle("slow");
+                $("div.all-the-services-of-International .International-services-toggle").hide();
+              });
+              $(".International-news-button").click(function(){
+                $("div.all-the-services-of-International .International-services-toggle").slideToggle("slow");
+                $("div.all-the-services-of-Local .Local-services-toggle").hide();
+              });
+            });
+          </script>
+          <br><br><br><br>
+         <!--------------Footer----------------->
+         <div class="footer-container">
+           <section class="footer"><br><br>
+                <h4>Waling Library</h4>
+                <p>Education for Success. </p>
+            <div class="icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+				<a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+			<h5>Designed by:</h5>
+			<p>NARAYAN RAJ BAGALE </p>
+            <p>@All Right Reserved.</p>
+            </section>
+    </div>
+        <!-- -----JavaScript for Toggle Menu----- -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";  
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";  
+            }
+        </script>
+    </body>
+</html>
